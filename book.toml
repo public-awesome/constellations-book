@@ -1,0 +1,7 @@
+[book]
+authors = ["Fabien Penso"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Constellations"
+description = "Constellations API"
