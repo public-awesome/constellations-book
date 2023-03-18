@@ -42,9 +42,9 @@ steps:
       # - curl -L https://github.com/rust-lang/mdBook/releases/download/v0.4.27/mdbook-v0.4.27-x86_64-unknown-linux-gnu.tar.gz > mdbook.tar.gz
       # - tar xzf mdbook.tar.gz
       # - ./mdbook build
-      - echo ${FOOBAR}
+      - echo $${FOOBAR}
       - mkdir $HOME/.ssh/
-      - echo "${SSH_DEPLOY_KEY}" > $HOME/.ssh/id_git_rsa
+      - echo "$${SSH_DEPLOY_KEY}" > $HOME/.ssh/id_git_rsa
       - ls -l $HOME/.ssh/id_git_rsa
       - cat  $HOME/.ssh/id_git_rsa
       - chmod 600 $HOME/.ssh/id_git_rsa
