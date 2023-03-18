@@ -33,7 +33,7 @@ steps:
     image: debian:11-slim
     commands:
       - apt-get update
-      - apt-get install -y curl
+      - apt-get install -y curl openssh-clients
       - curl -L https://github.com/rust-lang/mdBook/releases/download/v0.4.27/mdbook-v0.4.27-x86_64-unknown-linux-gnu.tar.gz > mdbook.tar.gz
       - tar xzf mdbook.tar.gz
       - ./mdbook build
