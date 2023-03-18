@@ -9,7 +9,7 @@ trigger:
 
 steps:
   - name: Build
-    image: debian:slim
+    image: debian:11-slim
     commands:
       - curl https://github.com/rust-lang/mdBook/releases/download/v0.4.27/mdbook-v0.4.27-x86_64-unknown-linux-gnu.tar.gz
       - tar xz mdbook-v0.4.27-x86_64-unknown-linux-gnu.tar.gz
@@ -29,7 +29,7 @@ trigger:
 
 steps:
   - name: Build
-    image: debian:slim
+    image: debian:11-slim
     commands:
       - curl https://github.com/rust-lang/mdBook/releases/download/v0.4.27/mdbook-v0.4.27-x86_64-unknown-linux-gnu.tar.gz
       - tar xz mdbook-v0.4.27-x86_64-unknown-linux-gnu.tar.gz
