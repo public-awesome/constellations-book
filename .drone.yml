@@ -42,4 +42,4 @@ steps:
       - ./mdbook build
       - eval `ssh-agent -s`
       - echo "$${SSH_DEPLOY_KEY}" | tr -d '\r' | ssh-add - > /dev/null
-      - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -r book/* constellation@orion.constellations.zone:/var/www/doc.constellations.zone/html/
+      - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -r book/* constellation@orion.constellations.zone:/var/www/book.constellations.zone/html/
