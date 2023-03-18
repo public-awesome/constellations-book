@@ -34,7 +34,7 @@ steps:
     commands:
       - apt-get update
       - apt-get install -y curl
-      - curl https://github.com/rust-lang/mdBook/releases/download/v0.4.27/mdbook-v0.4.27-x86_64-unknown-linux-gnu.tar.gz
-      - tar xz mdbook-v0.4.27-x86_64-unknown-linux-gnu.tar.gz
-      - mdbook Build
+      - curl -L https://github.com/rust-lang/mdBook/releases/download/v0.4.27/mdbook-v0.4.27-x86_64-unknown-linux-gnu.tar.gz > mdbook.tar.gz
+      - tar xzf mdbook.tar.gz
+      - ./mdbook build
       - scp -r book constellation@orion.constellations.zone:/var/www/doc.constellations.zone/html
