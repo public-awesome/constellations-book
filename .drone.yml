@@ -28,13 +28,12 @@ trigger:
   event:
     - push
 
-environment:
-  SSH_DEPLOY_KEY:
-    from_secret: ssh_deploy_key
-
 steps:
   - name: Build
     image: debian:11-slim
+		environment:
+		  SSH_DEPLOY_KEY:
+		    from_secret: ssh_deploy_key
     commands:
       - apt-get update
       - apt-get install -y curl openssh-client
