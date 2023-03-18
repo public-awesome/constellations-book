@@ -1,14 +1,9 @@
 # sales for a given collection
 
 ```
-query Sales {
+query Mints {
   events(
-    contractFilters: [
-      {
-        contractType: "crates.io:sg-marketplace"
-        events: [{ name: "wasm-finalize-sale", action: null }]
-      }
-    ]
+    filter: SALES
     dataFilters: [
       {
         name: "collection"
@@ -20,6 +15,8 @@ query Sales {
   ) {
     edges {
       node {
+        eventName
+        action
         createdAt
         data
       }

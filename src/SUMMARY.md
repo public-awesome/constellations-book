@@ -23,6 +23,7 @@
 	- [bids for a given collection and given bidder](events/bids_for_collection_and_bidder.md)
 	- [received offers on owned NFT](events/received_offers_on_owned_nfts.md)
 	- [sales for a given collection](events/sales_for_given_collection.md)
+	- [mints for a given collection](events/mints_for_given_collection.md)
 
 - [Names](names/README.md)
 	- [all names](names/all.md)
