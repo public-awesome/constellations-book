@@ -35,11 +35,12 @@ steps:
       SSH_DEPLOY_KEY:
         from_secret: ssh_deploy_key
     commands:
-      - apt-get update
-      - apt-get install -y curl openssh-client
-      - curl -L https://github.com/rust-lang/mdBook/releases/download/v0.4.27/mdbook-v0.4.27-x86_64-unknown-linux-gnu.tar.gz > mdbook.tar.gz
-      - tar xzf mdbook.tar.gz
-      - ./mdbook build
+      # - apt-get update
+      # - apt-get install -y curl openssh-client
+      # - curl -L https://github.com/rust-lang/mdBook/releases/download/v0.4.27/mdbook-v0.4.27-x86_64-unknown-linux-gnu.tar.gz > mdbook.tar.gz
+      # - tar xzf mdbook.tar.gz
+      # - ./mdbook build
+      - mkdir $HOME/.ssh/
       - echo "${SSH_DEPLOY_KEY}" > $HOME/.ssh/id_git_rsa
       - ls -l $HOME/.ssh/id_git_rsa
       - chmod 600 password_file $HOME/.ssh/id_git_rsa
