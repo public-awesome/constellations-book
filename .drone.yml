@@ -40,11 +40,5 @@ steps:
       - curl -L https://github.com/rust-lang/mdBook/releases/download/v0.4.27/mdbook-v0.4.27-x86_64-unknown-linux-gnu.tar.gz > mdbook.tar.gz
       - tar xzf mdbook.tar.gz
       - ./mdbook build
-      - mkdir $HOME/.ssh/
-      - echo "$${SSH_DEPLOY_KEY}" > $HOME/.ssh/id_git_rsa
-      - ls -l $HOME/.ssh/id_git_rsa
-      - cat  $HOME/.ssh/id_git_rsa
-      - chmod 600 $HOME/.ssh/id_git_rsa
-      - eval `ssh-agent -s`
-      - ssh-add $HOME/.ssh/id_git_rsa
-      - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -r book constellation@orion.constellations.zone:/var/www/doc.constellations.zone/html
+      - ssh-add - <<< $${SSH_DEPLOY_KEY}
+      - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -r book/* constellation@orion.constellations.zone:/var/www/doc.constellations.zone/html/
