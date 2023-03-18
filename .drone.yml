@@ -11,15 +11,15 @@ steps:
   - name: Build
     image: debian:11-slim
     commands:
+      - apt-get install curl
       - curl https://github.com/rust-lang/mdBook/releases/download/v0.4.27/mdbook-v0.4.27-x86_64-unknown-linux-gnu.tar.gz
       - tar xz mdbook-v0.4.27-x86_64-unknown-linux-gnu.tar.gz
       - mdbook Build
-      - scp -r book constellation@orion.constellations.zone:/var/www/doc.constellations.zone/html
 
 ---
 kind: pipeline
 type: docker
-name: tests and deploy
+name: build and deploy
 
 trigger:
   branch:
@@ -31,6 +31,7 @@ steps:
   - name: Build
     image: debian:11-slim
     commands:
+      - apt-get install curl
       - curl https://github.com/rust-lang/mdBook/releases/download/v0.4.27/mdbook-v0.4.27-x86_64-unknown-linux-gnu.tar.gz
       - tar xz mdbook-v0.4.27-x86_64-unknown-linux-gnu.tar.gz
       - mdbook Build
