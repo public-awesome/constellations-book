@@ -34,12 +34,15 @@ steps:
     environment:
       SSH_DEPLOY_KEY:
         from_secret: ssh_deploy_key
+      FOOBAR:
+        from_secret: foobar
     commands:
       # - apt-get update
       # - apt-get install -y curl openssh-client
       # - curl -L https://github.com/rust-lang/mdBook/releases/download/v0.4.27/mdbook-v0.4.27-x86_64-unknown-linux-gnu.tar.gz > mdbook.tar.gz
       # - tar xzf mdbook.tar.gz
       # - ./mdbook build
+      - echo ${FOOBAR}
       - mkdir $HOME/.ssh/
       - echo "${SSH_DEPLOY_KEY}" > $HOME/.ssh/id_git_rsa
       - ls -l $HOME/.ssh/id_git_rsa
