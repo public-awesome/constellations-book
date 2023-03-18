@@ -12,10 +12,10 @@ steps:
     image: debian:11-slim
     commands:
       - apt-get update
-      - apt-get install curl
-      - curl https://github.com/rust-lang/mdBook/releases/download/v0.4.27/mdbook-v0.4.27-x86_64-unknown-linux-gnu.tar.gz
-      - tar xz mdbook-v0.4.27-x86_64-unknown-linux-gnu.tar.gz
-      - mdbook Build
+      - apt-get install -y curl openssh-client
+      - curl -L https://github.com/rust-lang/mdBook/releases/download/v0.4.27/mdbook-v0.4.27-x86_64-unknown-linux-gnu.tar.gz > mdbook.tar.gz
+      - tar xzf mdbook.tar.gz
+      - ./mdbook build
 
 ---
 kind: pipeline
@@ -33,7 +33,7 @@ steps:
     image: debian:11-slim
     commands:
       - apt-get update
-      - apt-get install -y curl openssh-clients
+      - apt-get install -y curl openssh-client
       - curl -L https://github.com/rust-lang/mdBook/releases/download/v0.4.27/mdbook-v0.4.27-x86_64-unknown-linux-gnu.tar.gz > mdbook.tar.gz
       - tar xzf mdbook.tar.gz
       - ./mdbook build
