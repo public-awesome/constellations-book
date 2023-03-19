@@ -32,7 +32,7 @@ currently is running on 3 servers:
 2. [Hetzner](https://www.hetzner.com/): AMD Ryzen 3600, 64GB
 3. [Interserver](https://my.interserver.net/): AMD RYZEN 5600X, 64GB
 
-It ran fine on a single server, but we wanted to have redondancy to avoid
+It ran fine on a single server, but we wanted to have redundancy to avoid
 downtimes.
 
 ## Safety
