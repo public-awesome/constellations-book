@@ -4,8 +4,8 @@ There are 2 available GraphQL endpoints.
 
 ## Mainnet
 
-[https://api.mainnet.stargaze.constellations.zone/graphql](https://api.mainnet.stargaze.constellations.zone/graphql)
+[https://constellations-api.mainnet.stargaze-apis.com/graphql](https://constellations-api.mainnet.stargaze-apis.com/graphql)
 
 ## Testnet
 
-[https://api.testnet.stargaze.constellations.zone/graphql](https://api.testnet.stargaze.constellations.zone/graphql)
+[https://constellations-api.testnet.stargaze-apis.com/graphql](https://constellations-api.testnet.stargaze-apis.com/graphql)
