@@ -13,7 +13,6 @@
 	- [collections created by a given address](collections/created_by_addr.md)
 
 - [Events](events/README.md)
-	-	[all events](events/get_all.md)
 	- [burns](events/burn.md)
 	- [name mints](events/name_mints.md)
 	- [token bids](events/token_bids.md)
@@ -23,10 +22,8 @@
 	- [bids for a given collection and given bidder](events/bids_for_collection_and_bidder.md)
 	- [received offers on owned NFT](events/received_offers_on_owned_nfts.md)
 	- [sales for a given collection](events/sales_for_given_collection.md)
-	- [mints for a given collection](events/mints_for_given_collection.md)
 
 - [Names](names/README.md)
-	- [all names](names/all.md)
 	- [all names sorted by offer](names/all_sorted_by_offer.md)
 	- [given name with its record](names/one.md)
 	- [name associated to a given address](names/name_by_associated_addr.md)

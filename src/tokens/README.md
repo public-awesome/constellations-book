@@ -1,6 +1,7 @@
 # Tokens
 
-## All attributes for all tokens for a given collection
+Tokens contains all NFT tokens. Always use a collection filter or the query
+will be slow
 
 ```
 query Tokens {

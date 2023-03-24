@@ -33,7 +33,7 @@ currently is running on 3 servers:
 3. [Interserver](https://my.interserver.net/): AMD RYZEN 5600X, 64GB
 
 It ran fine on a single server, but we wanted to have redundancy to avoid
-downtimes.
+downtimes. These days it manages way over 10 million requests per day.
 
 ## Safety
 
@@ -54,13 +54,24 @@ All timestamps you get are UTC and don't include timezone.
 Add a way to contact you in the `User-Agent` header in case I need to get in
 touch with you if you are making too many requests.
 
+## Throttling
+
+There is no throttling in place for now but will be soon. Please don't hammer
+the server with too many calls.
+
 ## Contributing to this documentation
 
 This documentation is available on
-[GitHub](https://github.com/penso/constellations-book) and issues and feature requests
+[GitHub](https://github.com/public-awesome/constellations-book) and issues and feature requests
 can be posted on the [GitHub issue
-tracker](https://github.com/penso/constellations-book/issues). Please consider opening a
-[pull request](https://github.com/penso/constellations-book/pulls).
+tracker](https://github.com/public-awesome/constellations-book/issues). Please consider opening a
+[pull request](https://github.com/public-awesome/constellations-book/pulls).
+
+## I can't find how to fetch specific data
+
+[Create an issue](https://github.com/public-awesome/constellations-book/issues)
+with as many details as possible, contract type, information you want and why
+you want to fetch it.
 
 ## License
 
