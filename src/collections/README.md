@@ -32,6 +32,8 @@ Variables
 }
 ```
 
+> [Try it out live on explorer](https://studio.apollographql.com/sandbox/explorer?endpoint=https%3A%2F%2Fconstellations-api.mainnet.stargaze-apis.com%2Fgraphql&explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4QEcYIE4CeABAMIQA25CUKAlhEgM4AUAJObXLSukQJKoANEVaMIeFACECvMpWp0GAZXFSCw1hABmWxgh78hIlBADWyAPIB3JPgCCYMHl5KUeWkgDmGqHgQBDEzwHJxc3D08ASiJgAB0kIiIoCioaeiZmDi4Ddk5uYTEJaV5RVWlhbV19Esq9FGETcyRrW2DHZ2MzSxt7duFfAKCQjtYBwPFh6LiExKSUhXTGGPjZ2c5-TwQV1aIwBEZfWgAHRSRt1cbkRjIYVHPZqwQAI0ZuLZnVsZQEMDsUe8SyXkaQYwwBRCQ-kQ4K4qB%2Bf3uAF97lluPdavp7iYUP5yNtkUhESBBCAAG7%2Bdz%2BJ5URgYEDTRKxECo-4YIgAJkE2yZhTUTN4SBglC5MyZGNZAqF5BFjJAl2aPTaTn5EKlMqITK%2BE3aKsFlHiRJJB3cJzpIERQA)
+
 ## Available sorting
 
 - TOKENS_COUNT_ASC: Sort by the smallest amount of tokens
