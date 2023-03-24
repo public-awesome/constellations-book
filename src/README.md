@@ -9,10 +9,10 @@ we decided to make its API available to anyone.
 Constellations is:
 
 1. A public facing website available at
-	 [www.constellations.zone](https://www.constellations.zone) to view its data
-	 This is mostly used to "validate" internal information, and you are invited
-	 to use the [Stargaze main website](https://www.stargaze.zone) instead,
-	 unless you're looking for information not available there.
+   [www.constellations.zone](https://www.constellations.zone) to view its data.
+   This is mostly used to "validate" internal information, and you are invited
+   to use the [Stargaze main website](https://www.stargaze.zone) instead,
+   unless you're looking for information not available there.
 
 2. A set of API to fetch data Constellations has indexed. This API is available
 	 over GraphQL and self-generated GraphQL documentation is enabled.
