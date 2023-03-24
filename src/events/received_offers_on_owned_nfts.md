@@ -17,3 +17,5 @@ query receivedOffersOnOwnedNfts {
   }
 }
 ```
+
+> [Try it out live on explorer](https://studio.apollographql.com/sandbox/explorer?endpoint=https%3A%2F%2Fconstellations-api.mainnet.stargaze-apis.com%2Fgraphql&explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4QEcYIE4CeABHglAgJYBuCYA8gGYP4DOdSdA7krQHIMoWRYAB0kRIghqoWACjESJDCgBsU%2BdEQBKAUQDCOgJIA1HQBEA%2BnQBi1nVoDKV3lYDqvcxd7WAKgsUMEHgAgmBgpCwsCCyaANoiICwoAIZ4LACMAKwEAMwAHAgAFjQAHgAOAGwATADsmWUocHAALABWrTlYYSw5NQCcSADWAAw1KJx9mXgJALr%2BEhQsxskqFGCaKHi4-gCUwvOSYADm0fviihJIEGAIZxcXUsgovMmIBxdgySnviovLq2AfgBfA4g85goEgAA0ICoqQoyQARipohgQNDElA8BQGmiQECgA)

@@ -43,3 +43,5 @@ query Burns($filters: [ContractFilter!], $dataFilters: [DataFilter!]) {
   "dataFilters": []
 }
 ```
+
+> [Try it out live on explorer](https://studio.apollographql.com/sandbox/explorer?endpoint=https%3A%2F%2Fconstellations-api.mainnet.stargaze-apis.com%2Fgraphql&explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4QEcYIE4CeABAEIx5IDOAFACQBmAlgDYr6XpEDaAwhKngCGUFADEWbPAEIAugBoitMIJSDxrdpy4ARFWon5ZASiLAAOkiJEEAN2QoaUfiiEj1kjoqYa8lBctV3TUUA-R9KE3NLK2swAHMESlMLGJikCDAEZOjUqycBYRQAFQIABwQU3KtQyqqoPAQVBDAAQRRamIBfDu7o3s6QORAbQTxGQQAjZkSMECirMxBvD0WtDvncxfyXQpLy1aItoTZKADpGCHRKOIBaAHYAJgBGRbkOhZBbe0oDrneYjZVD5IQSIA6LADugkocFe-1Si0KFyQ4JAE3IKJA8KIvSqMh6bxy2SqW2crmKZQqGEOIHqTTOFyucUeTxuE2hVMJJM%2BdlQP2pfyJqUBQMWILB1Mh0Nhg2xHyR-FR6Ioi2xuNy%2BKJ6vklUWoSCvl%2BmoGQ0o9UYpTQmBAnSAA)
