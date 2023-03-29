@@ -1,7 +1,7 @@
 # sales for a given collection
 
 ```
-query Mints {
+query Sales {
   events(
     filter: SALES
     dataFilters: [
@@ -25,4 +25,4 @@ query Mints {
 }
 ```
 
-> [Try it out live on explorer](https://studio.apollographql.com/sandbox/explorer?endpoint=https%3A%2F%2Fconstellations-api.mainnet.stargaze-apis.com%2Fgraphql&explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4QEcYIE4CeABALICWqAzkcADpJFEIBuyKlAFPY4wGZkAbFPnREAygEEAMgFEx3HmACGKJQDFBwvJVEBtBTxoHDRJEsSjaIKBAECEUFGQhIrxw8yUDclkJVXaAIwIAO4ADmAoAEyUAKzRANYoCQQAXpTMAMx4ABYIABz5BAgEAB5hAFZ4vMxYAOZRAAwAnHhKULFhSAAsAGx1vLx4AOyxWMwo%2BXhYmW4MJowQYfgqEHiiMgCKAKrS7kQAvsYAusaUaygAQgSil1IA8gDCANIA%2BgASMgCSAOLvACqvAAickeCgAlEZ5owEGA6ghqHRoTwkBAwAgoQsYaxUAA5cwIfaMdpOFxEohQPAIFSwiQocnKVT7I7IlmMFkHEAAGhAnjwZCUACN7JQMCBuX5KWQwmhMCADkA)
+> [Try it out live on explorer](https://studio.apollographql.com/sandbox/explorer?endpoint=https%3A%2F%2Fconstellations-api.mainnet.stargaze-apis.com%2Fgraphql&explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4QEcYIE4CeABAMoCGANggM5HAA6SRRCAbsitQBSPPMBmASwop86UgEEAMgFESvPmDIoyAMWGi81cQG0FfOvoNEkZROPogoEClSgpBEJJaMHWlXBZDUVWgIwIAO4ADmAoAEzUAKwRANYosQQAXtSsAMx4ABYIABw5BAgEAB7BAFZ4-KxYAObhAAwAnHhkUFHBSAAsAGzV-Px4AOxRWKwoOXhYaS5MxswQwfjKEHjiMgCKAKrSrkQAvkYAukbUyygAQgTiZ1IA8gDCANIA%2BgASMgCSAOIvACpPACJyO4KACUhhmzAQYGqNHBsyQEDACDhsxY7FQADkzAgdswWg4nLiiFA8AhlFCJCgiUoVDt9hC9gp6bsQAAaEDuPCCMgAIyo1AwIDZ3hJgmCaEwIF2QA)
