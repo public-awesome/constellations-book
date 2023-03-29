@@ -12,6 +12,9 @@
 	- [collections where an address owns at least one token](collections/user_own_tokens.md)
 	- [collections created by a given address](collections/created_by_addr.md)
 
+- [Contracts](contracts/README.md)
+  - [contract at a given address](contracts/contract.md)
+
 - [Events](events/README.md)
 	- [burns](events/burn.md)
 	- [name mints](events/name_mints.md)
