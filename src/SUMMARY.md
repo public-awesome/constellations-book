@@ -35,6 +35,7 @@
 - [Tokens](tokens/README.md)
 	- [tokens for a given owner](tokens/owner.md)
 	- [tokens for a given collection](tokens/collection.md)
+	- [tokens available as live auctions](tokens/live_auctions.md)
 
 -----------
 
