@@ -28,6 +28,8 @@
     - [live auctions](events/live_auctions.md)
   - [all sales](events/sales.md)
 
+- [Messages](messages/README.md)
+
 - [Names](names/README.md)
 	- [all names sorted by offer](names/all_sorted_by_offer.md)
 	- [given name with its record](names/one.md)
@@ -37,6 +39,8 @@
 	- [tokens for a given owner](tokens/owner.md)
 	- [tokens for a given collection](tokens/collection.md)
 	- [tokens available as live auctions](tokens/live_auctions.md)
+
+- [Transactions](transactions/README.md)
 
 -----------
 

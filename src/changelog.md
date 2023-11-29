@@ -1,6 +1,5 @@
 # Changelog
 
-* Added contracts
-* Added all sales
-* Added links to studio explore
-* Changed endpoints to use a load balancer
+# 2023-11-29
+
+- Added Messages and Transactions sections
