@@ -1,18 +1,21 @@
 # Introduction
 
 **Constellations** is a high-performance and real-time indexer developed by
-[Fabien Penso](https://pen.so) for [Stargaze](https://www.stargaze.zone), a L1
-blockchain on Cosmos focusing on NFTs. Constellations is currently used by
-Stargaze for its main website to display data in the fastest way possible, and
-we decided to make its API available to anyone.
+[Fabien Penso](https://pen.so) originally for
+[Stargaze](https://www.stargaze.zone) and now for multiple Cosmos chains.
+Constellations is currently used by Stargaze for its main website to display
+data in the fastest way possible.
+
+Constellations indexes blocks, transactions, messages and events and is able to
+index any Cosmos chain. It also indexes off-chain data like IPFS NFTs to store
+width, height, content_type and content_length as well as NFT metadata like
+traits and automatically calculate rarity. It also stores Stargaze specific
+informations like Stargaze names.
 
 Constellations is:
 
 1. A public facing website available at
-   [www.constellations.zone](https://www.constellations.zone) to view its data.
-   This is mostly used to "validate" internal information, and you are invited
-   to use the [Stargaze main website](https://www.stargaze.zone) instead,
-   unless you're looking for information not available there.
+   [www.constellations.zone](https://www.constellations.zone).
 
 2. A set of API to fetch data Constellations has indexed. This API is available
 	 over GraphQL and self-generated GraphQL documentation is enabled.
@@ -20,17 +23,26 @@ Constellations is:
 You should already know about GraphQL to use Constellations. You can read more
 about GraphQL [here](https://graphql.org).
 
+## GraphQL queries
+
+You'll most likely be interested in [transactions](transactions/),
+[messages](messages/) and [events](events/).
+
+## Available nodes
+
+As of now, I'm indexing [Stargaze
+mainnet](https://www.mainnet.stargaze.constellations.zone/), [Stargaze
+testnet](https://www.testnet.stargaze.constellations.zone/), [DYDX
+mainnet](https://www.mainnet.dydx.constellations.zone/), [Noble
+mainnet](https://www.mainnet.noble.constellations.zone/), and [Neutron
+mainnet](https://www.mainnet.neutron.constellations.zone/). This list is
+subject to change.
+
 ## How is it built?
 
-Constellations is built entirely in Rust with
-[tendermint-rs](https://github.com/informalsystems/tendermint-rs), backed with
-Posgresql and hosted on bare metal servers for optimum performance. It fetches
-blocks live from the blockchain over websockets, and parse them instantly. It 
-currently is running on 3 servers:
-
-1. [Dedibox](https://www.dedibox.fr/): Xeon E3 1245v5, 32GB
-2. [Hetzner](https://www.hetzner.com/): AMD Ryzen 3600, 64GB
-3. [Interserver](https://my.interserver.net/): AMD RYZEN 5600X, 64GB
+Constellations is built entirely in Rust, backed with Posgresql and hosted on
+bare metal servers for optimum performance. It fetches blocks live from the
+blockchain over websockets, and parse them instantly.
 
 It ran fine on a single server, but we wanted to have redundancy to avoid
 downtimes. These days it manages way over 10 million requests per day.
