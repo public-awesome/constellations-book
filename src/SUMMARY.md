@@ -29,6 +29,7 @@
   - [all sales](events/sales.md)
 
 - [Messages](messages/README.md)
+	- [filtering on data](messages/data_filters.md)
 
 - [Names](names/README.md)
 	- [all names sorted by offer](names/all_sorted_by_offer.md)
